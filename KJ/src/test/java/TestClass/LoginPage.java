@@ -32,11 +32,14 @@ public class LoginPage extends BaseClass {
         if (driver.getTitle().equalsIgnoreCase("MMC-Koyambedu"))
         {
             System.out.println("Successful Login");
+            driver.quit();
         }
         else
         {
             System.out.println("UnSuccess Login");
+            driver.quit();
         }
+
     }
 
  //  @Test(priority = 2,groups = {"A"},dependsOnMethods = {"loginPage"})

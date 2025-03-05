@@ -19,6 +19,12 @@ public class BaseClass  extends configFileRead {
             ChromeOptions options = new ChromeOptions();
              driver = new ChromeDriver(options);
             options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--headless");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--remote-debugging-port=9222");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--window-size=1920,1080");
 
 
             driver.get(configFileRead.getURL());

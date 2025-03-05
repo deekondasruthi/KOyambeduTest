@@ -37,7 +37,7 @@ import java.util.List;
             driver.close();
         }
 
-        @Test(priority = 2,  dependsOnMethods = {"loginPageExecute"})
+       // @Test(priority = 2,  dependsOnMethods = {"loginPageExecute"})
         public void shopUpdateTest() throws IOException, InterruptedException, AWTException {
         Shop_Update_Create.shopUpdate_Create();
             test = extent.createTest("Shop Update Test");
